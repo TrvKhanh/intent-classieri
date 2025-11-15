@@ -129,7 +129,7 @@ fine-tune-intent/
 ├── abbreviations.json        # Abbreviation → full word mapping
 │
 ├── data.json                 # Raw data (not cleaned)
-├── data_train.json          # Cleaned data (auto-generated)
+├── data_train.json          # Cleaned data
 │
 ├── clean_text.py            # Text cleaning script
 ├── dataset_train.py         # Dataset loading and conversion
