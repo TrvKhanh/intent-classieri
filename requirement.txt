@@ -1,0 +1,5 @@
+transformers==4.57.1
+datasets==4.4.1
+torch==2.8.0+cpu
+peft==0.18.0
+wandb==0.23.0
