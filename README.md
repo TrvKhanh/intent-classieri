@@ -129,34 +129,6 @@ Output: JSON string
     ↓
 [Post-processing] → Parse JSON → Extract router & infor
 ```
-
-### 4. Training Configuration
-
-**Hyperparameters:**
-- **Epochs**: 3
-- **Batch size**: 8 (per device)
-- **Learning rate**: 2e-4
-- **LR Scheduler**: Cosine
-- **Warmup ratio**: 0.1
-- **Weight decay**: 0.01
-- **Optimizer**: AdamW
-
-**Training Strategy:**
-- **Train/Test split**: 80/20
-- **Evaluation**: Every epoch
-- **Saving**: Every epoch
-- **Logging**: WandB integration
-- **Metrics tracking**:
-  - JSON valid prediction ratio
-  - Exact match ratio
-
-### 5. Custom Trainer
-
-The `train.py` file uses `CustomSeq2SeqTrainer` to:
-- Handle inputs incompatible with model signature
-- Filter inputs according to model's forward signature
-- Handle label smoothing (if enabled)
-
 ---
 
 ## Directory Structure
